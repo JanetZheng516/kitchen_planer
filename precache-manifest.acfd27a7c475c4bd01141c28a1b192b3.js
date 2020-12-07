@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "78b610843c3dc034cee41655cb8f67ee",
+    "revision": "feaf5f9af30dcf71e891500e749c400d",
     "url": "/kitchen_planner/index.html"
   },
   {
-    "revision": "3dfc2c7b4de5cf203993",
+    "revision": "149099d1662ae6ce5df3",
     "url": "/kitchen_planner/static/css/main.5a74d603.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kitchen_planner/static/js/2.8949381e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3dfc2c7b4de5cf203993",
-    "url": "/kitchen_planner/static/js/main.77745485.chunk.js"
+    "revision": "149099d1662ae6ce5df3",
+    "url": "/kitchen_planner/static/js/main.bb902d93.chunk.js"
   },
   {
     "revision": "864844de61d0f4ff3a5a",
