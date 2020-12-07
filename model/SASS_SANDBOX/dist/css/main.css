@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+nav {
+  width: 100%;
+  height: 70px;
+  background: pink;
+  text-align: center; }
+  nav .logo {
+    color: #fff;
+    text-align: center;
+    line-height: 70px;
+    font-size: 250%;
+    font-family: 'Lemonada', cursive; }
+  nav a:link {
+    text-decoration: none; }
+
+.menu {
+  max-width: 1000px;
+  margin: 0 auto; }
+
+.postsContainer {
+  padding: 30px;
+  text-align: center; }
+  .postsContainer .card {
+    margin: 0 auto;
+    padding: 10px;
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    background: #fff;
+    -webkit-box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: center; }
+  .postsContainer .card-title {
+    font-size: 150%;
+    line-height: 50px;
+    font-family: 'Sriracha', cursive; }
+  .postsContainer .row {
+    position: relative;
+    padding: 10px;
+    color: #878787; }
+  .postsContainer .post {
+    display: inline;
+    padding: 40px;
+    position: relative; }
+  .postsContainer .modal-content .add {
+    padding: 40px 40px 0;
+    text-align: center; }
+    .postsContainer .modal-content .add input {
+      width: 100%; }
+  .postsContainer .item-name {
+    position: absolute;
+    font-size: 15px; }
+  .postsContainer .content {
+    text-align: left;
+    width: 95%;
+    padding: 10px;
+    height: 50px;
+    margin-bottom: 30px; }
+  .postsContainer .form-control {
+    border-color: #878787;
+    border-style: solid;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+    outline: none;
+    width: 100px;
+    padding-top: 30px; }
+  .postsContainer .btn {
+    display: inline-block;
+    font-size: 18px;
+    color: white;
+    background: black;
+    padding: 5px 10px;
+    margin: 20px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    text-align: center;
+    position: relative; }
+  .postsContainer .save {
+    background-color: #4bd8a9; }
+  .postsContainer .clear {
+    background-color: crimson; }
+  .postsContainer .adding {
+    background-color: #4bd8a9; }
+  .postsContainer .btn:hover {
+    background: pink;
+    border: pink;
+    color: black; }
+  .postsContainer #date {
+    background: none; }
+
+.list-title {
+  text-align: center;
+  font-size: 18px;
+  padding: 30px; }
+
+li {
+  background-color: #fff;
+  line-height: 1.5rem;
+  padding: 10px 20px;
+  margin: 0;
+  border-bottom: 1px solid #e0e0e0;
+  display: block;
+  text-align: justify;
+  /* The Modal (background) */
+  /* Modal Content/Box */
+  /* The Close Button */ }
+  li .input {
+    float: left; }
+  li div {
+    padding: 10px; }
+  li .secondary-content {
+    padding: 0 20px;
+    float: right; }
+    li .secondary-content.add-recipe {
+      color: pink; }
+    li .secondary-content.add-item {
+      color: #26a69a; }
+    li .secondary-content.edit {
+      color: black; }
+    li .secondary-content.delete {
+      color: slategrey; }
+  li .modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: black;
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */ }
+  li .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */ }
+  li .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold; }
+  li .close:hover,
+  li .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer; }
+  li textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none; }
+  li .modalControl {
+    text-align: center; }
+  li .ingredient {
+    width: 90%;
+    font-size: 18px;
+    position: center; }
+
+.list-group {
+  margin: 0 auto;
+  padding: 40px;
+  width: 70%;
+  min-width: 260px; }
+  .list-group li:last-of-type {
+    border: 0; }
+
+.box {
+  border: 1px #CCC solid;
+  padding: 40px;
+  margin: 30px;
+  text-align: left;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: inset 0px 11px 8px -10px #CCC, inset 0px -11px 8px -10px #CCC; }
+
+.remove {
+  color: red; }
+
+.edit {
+  color: black; }
+
+.recipe-editor {
+  display: inline;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px; }
+
+@media (max-width: 882px) {
+  .postsContainer .post {
+    display: block; } }
+
+@media (max-width: 500px) {
+  nav .logo {
+    line-height: 80px;
+    font-size: 150%; }
+  .postsContainer .card {
+    width: 100%;
+    height: auto; }
+  .postsContainer .post {
+    padding: 10px; }
+  li .input {
+    float: none; }
+  li div {
+    text-align: center; }
+  li div .secondary-content {
+    padding: 0 10px;
+    float: none; }
+  .hide .list-group {
+    padding: 0px; }
+  .box {
+    padding: 20px 8px;
+    margin: 0px; } }

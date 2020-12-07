@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/84654b860b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Lemonada:wght@700&family=Roboto+Mono:ital@1&family=Sriracha&display=swap" rel="stylesheet">
+    <title>Kitchen Planner</title>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">Kitchen Planner</a>
+        </div>
+    </nav>
+     
+    <div class="postsContainer">
+        <div class="card">
+            <span class="card-title">What are we going to eat today?</span>
+          
+            <div class="row">
+                <div class="post">
+                    <label class="item-name">Day</label>
+                    <select name="day" id="date" class="form-control">
+                        <option value=""></option>
+                        <option value="monday">Monday</option>
+                        <option value="tuesday">Tuesday</option>
+                        <option value="wednesday">Wednesday</option>
+                        <option value="thursday">Thursday</option>
+                        <option value="friday">Friday</option>
+                        <option value="saturday">Saturday</option>
+                        <option value="Sunday">Sunday</option>
+                    </select> 
+                </div>
+
+                <div class="post">
+                    <label class="item-name">Meal</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+ 
+            <button class="btn">Post</button>
+        </div>
+    </div>
+
+    <div class="postsContainer">
+        <span class="card-title">My weekly menu</span>
+
+        <div class="menu">
+            <div class="myDIV"></div>
+            
+            <ul>
+                <strong id="weekday" class="list-title">Monday</strong> 
+                <div class="myDIV">
+                    <li class="collection-item" id="item-0">
+                        <div class="input"> <i class="fas fa-chevron-down" style="padding-left: 10px;"></i>
+                   
+                            <em>Tomattos with eggs</em></div>
+                       
+                        <div>
+                         <a href="#" class="secondary-content delete"><i class="fas fa-trash-alt"></i></a>
+                         <a href="#" class="secondary-content edit"><i class="edit-item fa fa-pencil"></i></a>
+    
+                         <!-- Trigger/Open The Modal -->
+                         <a href="#" class="secondary-content add-recipe" id="myBtnAddrecipe"><i class="fas fa-book-medical"></i></a>
+                         <!-- The Modal -->
+                         <div id="myModalRecipe" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <!-- <label class="item-name">Add recipe</label></br> -->
+                                <textarea placeholder="Add your recipe..."></textarea>
+                                <div class="modalControl">
+                                    <button class="btn save">Save</button>
+                                    <button class="btn clear">Clear</button>
+                                </div>  
+                            </div>
+                        </div>
+    
+                        <a href="#" class="secondary-content add-item" id="myBtnAddIngredient"><i class="fas fa-cart-plus"></i>
+                        </a>
+                    </div>
+                        <div id="myModalIngredient" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <div class="add">
+                                    <input type="text" class="form-control ingredient" placeholder="Add new ingredient here">
+                                    <button class="btn adding">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                     </li>
+    
+                </div>
+
+                <div class="hide">
+                    <ul class="list-group">
+                        <li>Item One
+                            <a href="#" class="secondary-content remove"><i class="fas fa-minus-circle"></i>
+                            </a> 
+                        </li>
+                        <li>Item Two
+                            <a href="#" class="secondary-content remove"><i class="fas fa-minus-circle"></i>
+                            </a>
+                        </li>
+                        <li>Item Three
+                            <a href="#" class="secondary-content remove"><i class="fas fa-minus-circle"></i>
+                            </a>
+                        </li>
+                            <div class="box">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, praesentium. Provident necessitatibus omnis quos. Asperiores sint quasi exercitationem reiciendis? Ex consequatur voluptates velit vitae consectetur ut exercitationem ratione, dolorum ducimus?
+                                <div class="recipe-editor">
+                                    <a href="#" class="secondary-content edit"><i class="edit-item fa fa-pencil"></i></a>
+                                </div>
+                            </div>
+                            
+                       
+                    </ul>
+                </div>
+                 
+               
+
+                <!-- <li class="collection-item" id="item-0">
+                    <strong>Tuesday: </strong> <em>Steak</em>
+                    <a href="#" class="secondary-content delete"><i class="fas fa-trash-alt"></i>
+                    </a>
+
+                    <a href="#" class="secondary-content edit"><i class="edit-item fa fa-pencil"></i>
+                    </a>
+
+                    <a href="#" class="secondary-content add-recipe"><i class="fas fa-book-medical"></i>
+                    </a>
+
+                
+                    <a href="#" class="secondary-content add-item"><i class="fas fa-cart-plus"></i>
+                    </a>
+
+                </li>
+                <li class="collection-item" id="item-0">
+                    <strong>Wednesday: </strong> <em>Eggplants</em>
+                    <a href="#" class="secondary-content delete"><i class="fas fa-trash-alt"></i>
+                    </a>
+                    <a href="#" class="secondary-content edit"><i class="edit-item fa fa-pencil"></i>
+                    </a>
+                    <a href="#" class="secondary-content add-recipe"><i class="fas fa-book-medical"></i>
+                    </a>
+                    <a href="#" class="secondary-content add-item"><i class="fas fa-cart-plus"></i>
+                    </a>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+
+      <script src="app.js"></script>
+
+
+   
+</body>
+</html>

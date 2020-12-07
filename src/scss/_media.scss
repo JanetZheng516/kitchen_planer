@@ -1,0 +1,51 @@
+@media(max-width: 882px) {
+
+    .postsContainer .post {
+        display: block; 
+    }
+
+    .postsContainer .card {
+        width: 100%;
+    }
+}
+
+@media(max-width: 500px) {
+    nav .logo {
+        line-height:80px;
+        font-size: 150%;
+    }
+
+    .postsContainer .card {
+        width:100%;
+        height:auto;
+    }
+
+    .postsContainer .post {
+        padding: 10px;
+    }
+
+    li .input {
+        float: none;
+
+    }
+
+    li div {
+        text-align: center;
+        max-width: 194px;
+        margin: 0 auto;
+    }
+
+    li div .secondary-content {
+        padding: 0 14px;
+    }
+
+    .hide .list-group {
+        padding: 0px;
+    }
+
+    .box {
+        padding: 20px 8px;
+        margin: 0px;
+    } 
+
+}
