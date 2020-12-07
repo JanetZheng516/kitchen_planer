@@ -43,9 +43,9 @@ class PostItems extends Component {
         return (
 
             <div className="postsContainer">
-                {this.props.items.length ? <span className="card-title">My weekly menu</span> : null}
+                {this.props.items && this.props.items.length ? <span className="card-title">My weekly menu</span> : null}
                 {this.days.map((day, index) => {
-                    const dayItems = this.props.items.filter(item => item.day === day);
+                    const dayItems = (this.props.items || []).filter(item => item.day === day);
                     if (!dayItems.length) {
                         return '';
                     }

@@ -136,7 +136,7 @@ class App extends Component {
 
   componentDidMount() {
     const items = JSON.parse(localStorage.getItem("items"));
-    this.setState({items})
+    this.setState({items: items || []})
   }
 
   render() {
