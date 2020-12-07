@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/kitchen_planner/static/css/main.5a74d603.chunk.css",
+    "main.js": "/kitchen_planner/static/js/main.77745485.chunk.js",
+    "main.js.map": "/kitchen_planner/static/js/main.77745485.chunk.js.map",
+    "runtime-main.js": "/kitchen_planner/static/js/runtime-main.be63be19.js",
+    "runtime-main.js.map": "/kitchen_planner/static/js/runtime-main.be63be19.js.map",
+    "static/js/2.8949381e.chunk.js": "/kitchen_planner/static/js/2.8949381e.chunk.js",
+    "static/js/2.8949381e.chunk.js.map": "/kitchen_planner/static/js/2.8949381e.chunk.js.map",
+    "index.html": "/kitchen_planner/index.html",
+    "precache-manifest.b72f4570f358d1b62c54350c8f2b2cc4.js": "/kitchen_planner/precache-manifest.b72f4570f358d1b62c54350c8f2b2cc4.js",
+    "service-worker.js": "/kitchen_planner/service-worker.js",
+    "static/css/main.5a74d603.chunk.css.map": "/kitchen_planner/static/css/main.5a74d603.chunk.css.map",
+    "static/js/2.8949381e.chunk.js.LICENSE.txt": "/kitchen_planner/static/js/2.8949381e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.be63be19.js",
+    "static/js/2.8949381e.chunk.js",
+    "static/css/main.5a74d603.chunk.css",
+    "static/js/main.77745485.chunk.js"
+  ]
+}
